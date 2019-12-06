@@ -9,36 +9,34 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.xudcloud</groupId>
-	<artifactId>webflux-demo</artifactId>
+	<artifactId>ribbon-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>webflux-demo</name>
+	<name>ribbon-client</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
+		<spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
 	</properties>
-<repositories>
-	<repository>
-		<id>nexus_spring</id>
-		<name>nexus spring</name>
-		<url>https://maven.aliyun.com/repository/spring</url>
-	</repository>
-	<repository>
-	<id>nexus</id>
-	<name>nexus public</name>
-	<url>https://maven.aliyun.com/repository/public</url>
-</repository>
-</repositories>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-webflux</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-eureka-client</artifactId>
+			<artifactId>spring-cloud-commons</artifactId>
 			<version>2.2.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<version>2.2.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -52,11 +50,23 @@
 			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>io.projectreactor</groupId>
-			<artifactId>reactor-test</artifactId>
-			<scope>test</scope>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-netflix-hystrix</artifactId>
+			<version>2.2.0.RELEASE</version>
 		</dependency>
 	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<build>
 		<plugins>

@@ -1,10 +1,10 @@
-package com.xudcloud.webflux.demo;
+package com.xudcloud.ribbon.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebfluxDemoApplicationTests {
+class RibbonClientApplicationTests {
 
 	@Test
 	void contextLoads() {

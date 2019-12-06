@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="webflux-demo" />
+        <module name="config-demo" />
+        <module name="zuul-demo" />
+        <module name="discovery-server" />
+        <module name="ribbon-demo" />
+        <module name="discovery-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="config-demo" target="1.8" />
+      <module name="discovery-client" target="1.8" />
+      <module name="discovery-server" target="1.8" />
+      <module name="feign-client" target="1.8" />
+      <module name="ribbon-demo" target="1.8" />
+      <module name="webflux-demo" target="1.8" />
+      <module name="zuul-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-demo" options="-parameters" />
+      <module name="discovery-client" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="feign-client" options="-parameters" />
+      <module name="ribbon-demo" options="-parameters" />
+      <module name="webflux-demo" options="-parameters" />
+      <module name="zuul-demo" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/config-demo/config-demo.iml" filepath="$PROJECT_DIR$/config-demo/config-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery-client/discovery-client.iml" filepath="$PROJECT_DIR$/discovery-client/discovery-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ribbon-demo/ribbon-demo.iml" filepath="$PROJECT_DIR$/ribbon-demo/ribbon-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springcloud-demo.iml" filepath="$PROJECT_DIR$/.idea/springcloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webflux-demo/webflux-demo.iml" filepath="$PROJECT_DIR$/webflux-demo/webflux-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-demo/zuul-demo.iml" filepath="$PROJECT_DIR$/zuul-demo/zuul-demo.iml" />
+    </modules>
+  </component>
+</project>

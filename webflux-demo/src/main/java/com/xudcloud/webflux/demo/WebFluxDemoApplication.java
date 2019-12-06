@@ -2,12 +2,14 @@ package com.xudcloud.webflux.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
-public class WebfluxDemoApplication {
+@EnableEurekaClient
+public class WebFluxDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WebfluxDemoApplication.class, args);
+		SpringApplication.run(WebFluxDemoApplication.class, args);
 	}
 
 }
